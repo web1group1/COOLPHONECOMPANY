@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CoolPhones</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" type="text/css" href="style/style.css" />
+    </head>
+    <body>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbutton">
+                <i class="fa fa-bars"></i>
+            </label>
+            <label class="logo">CoolPhones</label>
+            <ul>
+                <li><a class="active" href="index.html">home</a></li>
+                <li><a href="products.html">products</a></li>
+                <li><a href="news.html">news</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="profile.html">profile</a></li>
+            </ul>
+            <div id="navspace"></div>
+        </nav>
+        <main>
+            <div class="main">
+                <div class="header">
+                    <img class="desktop_image" src="style/images/header.png" width="100%">
+                    <img class="mobile_image" src="style/images/headerp.png" width="100%">
+                </div>
+                <div id="navspace2"></div>
+                <div class="deals">
+                    <h1> BIG DEALS</h1>
+                </div>
+                <div style="position: relative;">
+                    <section id="extranav" class="mo">
+                        <div class="extranavoptions">
+                            <a id="phones">Phones</a> 
+                            <a id="toasters">Toasters</a>
+                            <a id="satellites">Satellites</a>
+                            <a id="deskphones">Phones</a> 
+                            <a id="desktoasters">Toasters</a>
+                            <a id="desksatellites">Satellites</a>
+                        </div>
+                    </section>
+                    <script>
+                        var categorypos = 0;
+                        var phones = document.getElementById('phones');
+                        var toasters = document.getElementById('toasters');
+                        var satellites = document.getElementById('satellites');
+                        var sliderone = document.getElementById('sliderone');
+                        var slidertwo = document.getElementById('slidertwo');
+                        var sliderthree = document.getElementById('sliderthree');
+                        var sliderthatslidesinsidethecontainer = document.getElementById('sliderthatslidesinsidethecontainer');
+
+                        phones.onclick = function() {
+                            categorypos = 0;
+                            sliderthatslidesinsidethecontainer.style.left = 0 + categorypos + '%';
+                        }
+                        toasters.onclick = function() {
+                            categorypos = -300;
+                            sliderthatslidesinsidethecontainer.style.left = 0 + categorypos + '%';
+                        }
+                        satellites.onclick = function() {
+                            categorypos = -600;
+                            sliderthatslidesinsidethecontainer.style.left = 0 + categorypos + '%';
+                        }
+                    </script>
+
+                    <div id="outermost" class="mobile_image">
+                        <div id="middlefy">
+                        <div id="theslidercontainer" class="slidercontainerposition">
+                            <div id="sliderthatslidesinsidethecontainer">
+                                <img  src="style/images/Phones.gif"><img  src="style/images/Phones2.gif"><img  src="style/images/Phones3.gif"><img  src="style/images/toaster.gif"><img  src="style/images/toaster.gif"><img  src="style/images/toaster.gif"><img  src="style/images/sataliteplol_1_1.gif"><img  src="style/images/sataliteplol_1_1.gif"><img  src="style/images/sataliteplol_1_1.gif"></div>
+                        </div>
+                        </div>
+                        <div class="slidernav">
+                            <a id="sliderone"></a>
+                            <a id="slidertwo"></a>
+                            <a id="sliderthree"></a>
+                        </div>
+                        <div id="backcolor1"></div>
+                    </div>
+                    <script type="text/javascript" src="data.js"></script>
+                    <script>
+                        var sliderone = document.getElementById('sliderone');
+                        var slidertwo = document.getElementById('slidertwo');
+                        var sliderthree = document.getElementById('sliderthree');
+                        var sliderthatslidesinsidethecontainer = document.getElementById('sliderthatslidesinsidethecontainer');
+                        sliderone.onclick = function() {
+                            sliderthatslidesinsidethecontainer.style.left = 0 + categorypos + '%';
+                        }
+
+                        slidertwo.onclick = function() {
+                           sliderthatslidesinsidethecontainer.style.left = -100 + categorypos + '%';
+                        }
+
+                        sliderthree.onclick = function() {
+                           sliderthatslidesinsidethecontainer.style.left = -200 + categorypos + '%';
+                        }
+                    </script>
+
+                    <section class="desktop_image">
+                        <div id="sliderdesk">
+                            <img id="deskImgOne" src="style/images/Phones.gif">
+                            <img id="deskImgTwo" src="style/images/Phones2.gif">
+                            <img id="deskImgThree" src="style/images/Phones3.gif">
+                        </div>
+                        <script>
+                            var deskphones = document.getElementById('deskphones');
+                            var desktoasters = document.getElementById('desktoasters');
+                            var desksatellites = document.getElementById('desksatellites');
+
+                            deskphones.onclick = function() {
+                                document.getElementById('deskImgOne').src = 'style/images/Phones.gif';
+                                document.getElementById('deskImgTwo').src = 'style/images/Phones2.gif';
+                                document.getElementById('deskImgThree').src = 'style/images/Phones3.gif';
+                            }
+
+                            desktoasters.onclick = function() {
+                                document.getElementById('deskImgOne').src = 'style/images/toaster.gif';
+                                document.getElementById('deskImgTwo').src = 'style/images/toaster.gif';
+                                document.getElementById('deskImgThree').src = 'style/images/toaster.gif';
+                            }
+
+                            desksatellites.onclick = function() {
+                                document.getElementById('deskImgOne').src = 'style/images/sataliteplol_1_1.gif';
+                                document.getElementById('deskImgTwo').src = 'style/images/sataliteplol_1_1.gif';
+                                document.getElementById('deskImgThree').src = 'style/images/sataliteplol_1_1.gif';
+                            }
+                        </script>
+                    </section>
+                    
+                    <div id="feed">
+                        <div class="bigarticle2">
+                            <div class="space2">BIG NEWS</div>
+                            <div class="space1"></div>
+        
+                            <div class="bigimagegallery-wrap2">
+                                <img src="style/images/arrowleft.png" id="backBtn3">
+                            <div class="bigimagegallery2">
+                                <span></span><img src="style/images/bigarticle.gif"></span>
+                                <span></span><img src="style/images/backgroundsatalite.gif"></span>
+                                <span></span><img src="style/images/phonespinnyspinny.gif"></span>
+                            </div>
+                            <img src="style/images/arrowright.png" id="nextBtn3">
+                            </div>
+                            </div>
+        
+                            <script>
+                                let scrollContainer3 = document.querySelector(".bigimagegallery2");
+                                let backBtn3 = document.getElementById("backBtn2");
+                                let nextBtn3 = document.getElementById("nextBtn2");
+            
+                                scrollContainer3.addEventListener("wheel", (evt) => {
+                                    evt.preventDefault();
+                                    scrollContainer3.scrollLeft += evt.deltaY;
+                                    scrollContainer3.style.scrollBehavior = "auto";
+                                });
+            
+                                nextBtn3.addEventListener("click", () => {
+                                    scrollContainer3.style.scrollBehavior = "smooth";
+                                    scrollContainer3.scrollLeft += 1000;
+                                });
+                                backBtn3.addEventListener("click", () => {
+                                    scrollContainer3.style.scrollBehavior = "smooth";
+                                    scrollContainer3.scrollLeft -= 1000;
+                                });
+            
+                            </script>
+
+                            <di id="comapnygoals">
+                                <div class="space2">Goals</div>
+                                <div class="space1"></div>
+                                <div class="goals">
+                                    <h3>1 To revolutionise the mobile phone space</h3>
+                                    <h4>2 To improve your day to day life starting from when you wake up</h4>
+                                    <h5>3 world domination</h5>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>©coolphones by gerald,hagai,amri</footer>
+        <section></section>
+    </body>
+</html>
+

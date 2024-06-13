@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CoolPhones</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" type="text/css" href="style/style.css" />
+    </head>
+    <body>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbutton">
+                <i class="fa fa-bars"></i>
+            </label>
+            <label class="logo">CoolPhones</label>
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a class="active" href="products.html">products</a></li>
+                <li><a href="news.html">news</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="profile.html">profile</a></li>
+            </ul>
+            <div id="navspace"></div>
+        </nav>
+        <main>
+            <div class="main">
+                <div class="header">
+                    <img class="desktop_image" src="style/images/ProductsBanner.png" width="100%">
+                    <img class="mobile_image" src="style/images/ProductsBanner_m.png" width="100%">
+                </div>
+                <div id="navspace2"></div>
+                <div class="deals">
+                    <h1>FEATURED PRODUCTS</h1>
+                </div>
+                <!--two main products here-->
+                <section class="desktop_image">
+                    <div id="sliderdesk">
+                        <img src="style/images/Phones.gif">
+                        <img src="style/images/toaster.gif">
+                        <img src="style/images/sataliteplol_1_1.gif">
+                    </div>
+                </section>
+
+                <div id="outermost" class="mobile_image">
+                    <div id="middlefy">
+                    <div id="theslidercontainer" class="slidercontainerposition">
+                        <div id="sliderthatslidesinsidethecontainerF">
+                            <img  src="style/images/Phones.gif"><img  src="style/images/toaster.gif"><img  src="style/images/sataliteplol_1_1.gif"></div>
+                            <div class="slidernav" style="top: 90%">
+                                <a id="slideroneF"></a>
+                                <a id="slidertwoF"></a>
+                                <a id="sliderthreeF"></a>
+                            </div>
+                    </div>
+                    </div>
+                    <div id="backcolor1"></div>
+                </div>
+                <script type="text/javascript" src="data.js"></script>
+                    <script>
+                        var slideroneF = document.getElementById('slideroneF');
+                        var slidertwoF = document.getElementById('slidertwoF');
+                        var sliderthreeF = document.getElementById('sliderthreeF');
+                        var sliderthatslidesinsidethecontainerF = document.getElementById('sliderthatslidesinsidethecontainerF');
+                        slideroneF.onclick = function() {
+                            sliderthatslidesinsidethecontainerF.style.left = '0%';
+                        }
+
+                        slidertwoF.onclick = function() {
+                           sliderthatslidesinsidethecontainerF.style.left = '-100%';
+                        }
+
+                        sliderthreeF.onclick = function() {
+                           sliderthatslidesinsidethecontainerF.style.left = '-200%';
+                        }
+                    </script>
+                <div class="deals">
+                    <h1>PHONES</h1>
+                </div>
+                <!--phone products below-->
+                <section class="desktop_image">
+                    <div id="sliderdesk">
+                        <img src="style/images/Phones.gif">
+                        <img src="style/images/Phones2.gif">
+                        <img src="style/images/Phones3.gif">
+                    </div>
+                </section>
+
+                <div id="outermost" class="mobile_image">
+                    <div id="middlefy">
+                    <div id="theslidercontainer" class="slidercontainerposition">
+                        <div id="sliderthatslidesinsidethecontainer">
+                            <img  src="style/images/Phones.gif"><img  src="style/images/Phones2.gif"><img  src="style/images/Phones3.gif"></div>
+                            <div class="slidernav" style="top: 90%">
+                                <a id="sliderone"></a>
+                                <a id="slidertwo"></a>
+                                <a id="sliderthree"></a>
+                            </div>
+                    </div>
+                    </div>
+                    <script>
+                        var sliderone = document.getElementById('sliderone');
+                        var slidertwo = document.getElementById('slidertwo');
+                        var sliderthree = document.getElementById('sliderthree');
+                        var header = document.getElementById('header');
+                        sliderone.onclick = function() {
+                            sliderthatslidesinsidethecontainer.style.left = '0%';
+                        }
+
+                        slidertwo.onclick = function() {
+                           sliderthatslidesinsidethecontainer.style.left = '-100%';
+                        }
+
+                        sliderthree.onclick = function() {
+                           sliderthatslidesinsidethecontainer.style.left = '-200%';
+                        }
+                    </script>
+                    <div id="backcolor1"></div>
+                </div>
+                <script type="text/javascript" src="data.js"></script>
+                    <script>
+                        var sliderone = document.getElementById('sliderone');
+                        var slidertwo = document.getElementById('slidertwo');
+                        var sliderthree = document.getElementById('sliderthree');
+                        var sliderthatslidesinsidethecontainer = document.getElementById('sliderthatslidesinsidethecontainer');
+                        sliderone.onclick = function() {
+                            sliderthatslidesinsidethecontainer.style.left = '0%';
+                        }
+
+                        slidertwo.onclick = function() {
+                           sliderthatslidesinsidethecontainer.style.left = '-100%';
+                        }
+
+                        sliderthree.onclick = function() {
+                           sliderthatslidesinsidethecontainer.style.left = '-200%';
+                        }
+                    </script>
+                <div class="deals">
+                    <h1>TOASTERS</h1>
+                </div>
+                <!--toaster products below-->
+                <section class="desktop_image">
+                    <div id="sliderdesk">
+                        <img src="style/images/toaster.gif">
+                        <img src="style/images/toaster.gif">
+                        <img src="style/images/toaster.gif">
+                    </div>
+                </section>
+
+                <div id="outermost" class="mobile_image">
+                    <div id="middlefy">
+                    <div id="theslidercontainer" class="slidercontainerposition">
+                        <div id="sliderthatslidesinsidethecontainerT">
+                            <img  src="style/images/toaster.gif"><img  src="style/images/toaster.gif"><img  src="style/images/toaster.gif"></div>
+                            <div class="slidernav" style="top: 90%">
+                                <a id="slideroneT"></a>
+                                <a id="slidertwoT"></a>
+                                <a id="sliderthreeT"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="backcolor1"></div>
+                </div>
+                <script type="text/javascript" src="data.js"></script>
+                    <script>
+                        var slideroneT = document.getElementById('slideroneT');
+                        var slidertwoT = document.getElementById('slidertwoT');
+                        var sliderthreeT = document.getElementById('sliderthreeT');
+                        var sliderthatslidesinsidethecontainerT = document.getElementById('sliderthatslidesinsidethecontainerT');
+                        slideroneT.onclick = function() {
+                            sliderthatslidesinsidethecontainerT.style.left = '0%';
+                        }
+
+                        slidertwoT.onclick = function() {
+                           sliderthatslidesinsidethecontainerT.style.left = '-100%';
+                        }
+
+                        sliderthreeT.onclick = function() {
+                           sliderthatslidesinsidethecontainerT.style.left = '-200%';
+                        }
+                    </script>
+                <div class="deals">
+                    <h1>SATELLITES</h1>
+                </div>
+                <!--satellite products below-->
+                <section class="desktop_image">
+                    <div id="sliderdesk">
+                        <img src="style/images/sataliteplol_1_1.gif">
+                        <img src="style/images/sataliteplol_1_1.gif">
+                        <img src="style/images/sataliteplol_1_1.gif">
+                    </div>
+                </section>
+
+                <div id="outermost" class="mobile_image">
+                    <div id="middlefy">
+                    <div id="theslidercontainer" class="slidercontainerposition">
+                        <div id="sliderthatslidesinsidethecontainerS">
+                            <img  src="style/images/sataliteplol_1_1.gif"><img  src="style/images/sataliteplol_1_1.gif"><img  src="style/images/sataliteplol_1_1.gif"></div>
+                            <div class="slidernav" style="top: 90%">
+                                <a id="slideroneS"></a>
+                                <a id="slidertwoS"></a>
+                                <a id="sliderthreeS"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="backcolor1"></div>
+                </div>
+                <script type="text/javascript" src="data.js"></script>
+                    <script>
+                        var slideroneS = document.getElementById('slideroneS');
+                        var slidertwoS = document.getElementById('slidertwoS');
+                        var sliderthreeS = document.getElementById('sliderthreeS');
+                        var sliderthatslidesinsidethecontainerS = document.getElementById('sliderthatslidesinsidethecontainerS');
+                        slideroneS.onclick = function() {
+                            sliderthatslidesinsidethecontainerS.style.left = '0%';
+                        }
+
+                        slidertwoS.onclick = function() {
+                           sliderthatslidesinsidethecontainerS.style.left = '-100%';
+                        }
+
+                        sliderthreeS.onclick = function() {
+                           sliderthatslidesinsidethecontainerS.style.left = '-200%';
+                        }
+                    </script>
+                </div>
+            </div>
+        </main>
+        <footer>©coolphones by gerald,hagai,amri</footer>
+    </body>
+</html>
+

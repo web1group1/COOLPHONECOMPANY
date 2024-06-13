@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CoolPhones</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" type="text/css" href="style/style.css" />
+    </head>
+    <body>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbutton">
+                <i class="fa fa-bars"></i>
+            </label>
+            <label class="logo">CoolPhones</label>
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="products.html">products</a></li>
+                <li><a class="active" href="news.html">news</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="profile.html">profile</a></li>
+            </ul>
+            <div id="navspace"></div>
+        </nav>
+        <main>
+            <div class="main">
+                <div class="header">
+                    <img class="desktop_image" src="style/images/ProductsBannertwo.png" width="100%">
+                    <img class="mobile_image" src="style/images/ProductsBannertwo_m.png" width="100%">
+                </div>
+
+                <div class="bigarticle">
+                    <div class="space2">BIG News</div>
+                    <div class="space1"></div>
+
+                    <div class="bigimagegallery-wrap">
+                        <img src="style/images/arrowleft.png" id="backBtn2">
+                    <div class="bigimagegallery">
+                        <span></span><img src="style/images/bigarticle.gif"></span>
+                        <span></span><img src="style/images/backgroundsatalite.gif"></span>
+                        <span></span><img src="style/images/phonespinnyspinny.gif"></span>
+                    </div>
+                    <img src="style/images/arrowright.png" id="nextBtn2">
+                    </div>
+                    </div>
+
+                    <script>
+                        let scrollContainer2 = document.querySelector(".bigimagegallery");
+                        let backBtn2 = document.getElementById("backBtn2");
+                        let nextBtn2 = document.getElementById("nextBtn2");
+    
+                        scrollContainer2.addEventListener("wheel", (evt) => {
+                            evt.preventDefault();
+                            scrollContainer2.scrollLeft += evt.deltaY;
+                            scrollContainer2.style.scrollBehavior = "auto";
+                        });
+    
+                        nextBtn2.addEventListener("click", () => {
+                            scrollContainer2.style.scrollBehavior = "smooth";
+                            scrollContainer2.scrollLeft += 1000;
+                        });
+                        backBtn2.addEventListener("click", () => {
+                            scrollContainer2.style.scrollBehavior = "smooth";
+                            scrollContainer2.scrollLeft -= 1000;
+                        });
+    
+                    </script>
+
+                <div class="space1"></div>
+                <div class="space2">News</div>
+
+
+                <div class="gallery-wrap">
+                    <img src="style/images/arrowleft.png" id="backBtn">
+                <div class="gallery">
+                    <div id="newsnews-right">
+                        <span><img src="style/images/newspage1.png"></span>
+                        <span><img src="style/images/newspage2.png"></span>
+                        <span><img src="style/images/newspage3.png"></span>
+                    </div>
+                    <div>
+                        <span><img src="style/images/newspage4.png"></span>
+                        <span><img src="style/images/newspage5.png"></span>
+                        <span><img src="style/images/newspage6.png"></span>
+                    </div>
+                </div>
+                <img src="style/images/arrowright.png" id="nextBtn">
+                </div>
+
+                <script>
+                    let scrollContainer = document.querySelector(".gallery");
+                    let backBtn = document.getElementById("backBtn");
+                    let nextBtn = document.getElementById("nextBtn");
+
+                    scrollContainer.addEventListener("wheel", (evt) => {
+                        evt.preventDefault();
+                        scrollContainer.scrollLeft += evt.deltaY;
+                        scrollContainer.style.scrollBehavior = "auto";
+                    });
+
+                    nextBtn.addEventListener("click", () => {
+                        scrollContainer.style.scrollBehavior = "smooth";
+                        scrollContainer.scrollLeft += 1200;
+                    });
+                    backBtn.addEventListener("click", () => {
+                        scrollContainer.style.scrollBehavior = "smooth";
+                        scrollContainer.scrollLeft -= 1200;
+                    });
+
+                </script>
+
+            </div>
+        </main>
+        <footer>©coolphones by gerald,hagai,amri</footer>
+        <section></section>
+    </body>
+</html>

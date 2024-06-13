@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CoolPhones</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" type="text/css" href="style/style.css" />
+        <!-- <style>
+            .profilemain {
+                position: relative;
+                width: 800px;
+                height: 700px;
+                background-color: aqua;
+                margin:0 auto
+            }
+
+            .profiletop {
+                position: relative;
+                width: 300px;
+                height: 300px;
+                background-color: blue;
+                margin:0 auto
+            }
+
+        </style> -->
+    </head>
+    <body>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbutton">
+                <i class="fa fa-bars"></i>
+            </label>
+            <label class="logo">CoolPhones</label>
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="products.html">products</a></li>
+                <li><a href="news.html">news</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a class="active" href="profile.html">profile</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section class="image-text"> 
+                <div class="container row">
+                    <div class="column col-4 box-blue center-flex">
+                        <img src="style/images/profilepic.png" alt="">
+                    </div>
+                    <div class="column col-8 box-aqua">
+                        <h2 class="colors2">
+                            About us
+                        </h2>
+                        <p>
+                            <form action="">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <Label class="colors2">Name</Label>
+                                        </td>
+                                        <td>
+                                            <input type="text" placeholder="name">
+                                        </td>
+                                    </tr>
+                    
+                                    <tr>
+                                        <td>
+                                            <label class="colors2">Age</label>
+                                        </td>
+                                        <td>
+                                            <input type="number">
+                                        </td>
+                                    </tr>
+                    
+                                    <tr>
+                                        <td>
+                                            <label class="colors2">Date of birth</label>
+                                        </td>
+                                        <td>
+                                            <input type="date" name="" id="">
+                                        </td>
+                                    </tr>
+                    
+                                    <tr>
+                                        <td>
+                                           
+                                        <td>
+                                            
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label class="colors2">Select to location</label>
+                                        </td>
+                                        <td>
+                                            <select name="" id="">
+                                                <option value="">Jaksel</option>
+                                                <option value="">Jakut</option>
+                                                <option value="">Jakpus</option>
+                                                <option value="">Jakbar</option>
+                                                <option value="">Jaktim</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                </table>
+                             
+                                <br>
+                                <button type="submit">submit</button>
+                            </form>
+                        </body>
+                    </html>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="container row">
+                    <div class="column col-12 box-aqua box-height">
+                        <h2 class="name">
+
+                        <button onclick="changecolor()">change blue</button>
+                    </div>
+                </div>
+            </section>
+            <!-- <div class="profilemain">
+                <div class="profiletop">
+                    <div class="profilepicture"> 
+                    </div>
+                    <div class="profiletext">
+                        <h1>lorem ipsum</h1>
+                        <h3>this one</h3>
+                    </div>
+                </div>
+                <div class="profilebottom">
+
+                </div>
+            </div> -->
+        </main>
+        <script>
+            const name=document.querySelector(".name");
+
+            function changecolor() {
+                name.style.color="blue";
+            }
+
+        </script>
+    </body>
+</html>
